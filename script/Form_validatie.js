@@ -7,6 +7,7 @@ function checkInput(){
     console.log("error")
 }
 
+// controle voor input van email en password
 function enableListerners(){
   // Email check
   email.input.addEventListener('blur', function () {
@@ -52,7 +53,7 @@ function enableListerners(){
   });
 }
 
-
+// label op border (zorgt ervoor dat als er tekst in input zit, de label bovenaan blijft)
 function handleFloatingLabel() {
   email.input.addEventListener('blur', function () {
     if (this.value.length < 1) {

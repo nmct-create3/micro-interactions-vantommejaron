@@ -2,6 +2,7 @@ const password = {};
 let email = {};
 let hart = {};
 
+// View button password
 function handlePasswordSwitcher() {
   password.input = document.querySelector('.js-password-input');
   password.toggle = document.querySelector('.js-password-toggle');
@@ -21,6 +22,7 @@ function handlePasswordSwitcher() {
   });
 }
 
+// hart inlezen
 function hartswitcher() {
   // Hart check
   hart.toggle = document.querySelector('.js-hart-toggle');
@@ -45,7 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
   email.input = document.querySelector('.js-email-input');
   email.field = document.querySelector('.js-email-field');
   email.message = document.querySelector('.js-email-error');
-  handleFloatingLabel();
   handlePasswordSwitcher();
   hartswitcher();
 });
